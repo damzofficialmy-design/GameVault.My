@@ -3,113 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GameVault.MY 🇲🇾 - Official Admin</title>
+<title>GameVault.MY - Official Admin List 🇲🇾</title>
 <style>
   body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: white; margin: 0; padding: 20px; }
   .container { max-width: 500px; margin: auto; }
-  .header { text-align: center; padding: 20px 0 10px 0; }
-  .header h1 { margin: 0; }
-  .header p { color: #25D366; font-weight: bold; font-size: 12px; }
-  .card { background: #1e1e1e; border: 1px solid #2a2a2a; border-radius: 16px; padding: 14px; margin: 12px 0; display: flex; align-items: center; justify-content: space-between; }
+  .header { text-align: center; padding: 25px 0 15px 0; }
+  .header h1 { margin: 0; font-size: 28px; }
+  .header p { color: #25D366; font-weight: bold; font-size: 13px; letter-spacing: 1px; }
+  .badge { background: #1a1a1a; border: 1px solid #333; padding: 6px 12px; border-radius: 20px; font-size: 11px; color: #aaa; display: inline-block; margin-top: 10px;}
+  
+  .card { background: linear-gradient(145deg, #1e1e1e, #161616); border-radius: 16px; padding: 16px; margin: 14px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid #2a2a2a; transition: 0.2s; }
+  .card:hover { border-color: #25D366; transform: scale(1.01); }
   .left { display: flex; align-items: center; }
-  .dp { width: 55px; height: 55px; border-radius: 50%; object-fit: cover; margin-right: 12px; border: 2px solid #25D366; background: #333; }
-  .name { font-weight: 800; font-size: 14px; }
+  .avatar { width: 48px; height: 48px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; margin-right: 12px; }
+  .name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 6px; }
   .role { font-size: 11px; color: #888; margin-top: 2px; }
-  .badge { font-size: 9px; background: #25D366; color: #000; padding: 2px 6px; border-radius: 10px; margin-left: 5px; font-weight: 900; }
+  .status { font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: bold; }
+  .online { background: #25D366; color: #000; }
+  .offline { background: #333; color: #999; }
   .btn { background: #fff; color: #000; padding: 9px 18px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 11px; }
   .btn-owner { background: #25D366; }
-  .edit-hint { background: #111; border: 1px dashed #333; padding: 15px; border-radius: 10px; font-size: 11px; color: #777; margin-top: 25px; text-align: center; }
-  .group a { display: block; background: #25D366; color: #000; margin: 10px 0; padding: 14px; border-radius: 12px; text-align: center; text-decoration: none; font-weight: 900; }
-  .group a.sec { background: #1e1e1e; color: #fff; border: 1px solid #333; }
+
+  .group { margin-top: 30px; }
+  .group h3 { text-align: center; font-size: 14px; color: #aaa; }
+  .group a { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: #000; margin: 10px 0; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 14px; }
+  .group a.secondary { background: #1e1e1e; color: #fff; border: 1px solid #333; }
+  .footer { text-align: center; color: #555; font-size: 11px; margin-top: 40px; line-height: 1.6; }
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
     <h1>GameVault.MY 🇲🇾</h1>
-    <p>OFFICIAL TRUSTED ADMIN LIST</p>
+    <p>TRUSTED SELLER SINCE 2021</p>
+    <span class="badge">✅ VERIFIED OFFICIAL WEBSITE</span>
   </div>
 
-  <div id="adminList"></div>
+  <!-- ===== ADMIN SLOT 1 - OWNER ===== -->
+  <div class="card" style="border-color: #25D366;">
+    <div class="left">
+      <div class="avatar">D</div>
+      <div>
+        <div class="name">Damz Official <span class="status online">OWNER</span></div>
+        <div class="role">Founder & Owner - HQ</div>
+      </div>
+    </div>
+    <a class="btn btn-owner" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <!-- ===== ADMIN SLOT 2 ===== -->
+  <div class="card">
+    <div class="left">
+      <div class="avatar">A1</div>
+      <div>
+        <div class="name">Admin Aliff <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Jualan & Support</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <!-- ===== ADMIN SLOT 3 ===== -->
+  <div class="card">
+    <div class="left">
+      <div class="avatar">A2</div>
+      <div>
+        <div class="name">Admin Along <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Jualan Malam</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <!-- ===== ADMIN SLOT 4 ===== -->
+  <div class="card">
+    <div class="left">
+      <div class="avatar">A3</div>
+      <div>
+        <div class="name">Admin Mira <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Service & Refund</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <!-- ===== ADMIN SLOT 5 ===== -->
+  <div class="card">
+    <div class="left">
+      <div class="avatar">A4</div>
+      <div>
+        <div class="name">Admin Eka <span class="status offline">OFFLINE</span></div>
+        <div class="role">Admin Part-Time</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <!-- ===== ADMIN SLOT 6 ===== -->
+  <div class="card">
+    <div class="left">
+      <div class="avatar">A5</div>
+      <div>
+        <div class="name">Admin Kosong <span class="status offline">HIRING</span></div>
+        <div class="role">Slot Kosong - PM Owner</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">APPLY</a>
+  </div>
 
   <div class="group">
+    <h3>🔰 CHANNEL & GROUP RASMI</h3>
     <a href="https://whatsapp.com/channel/0029VbD1YOoInlqJiWlYLt3n">📢 JOIN CHANNEL GAMEVAULT.MY</a>
-    <a href="https://whatsapp.com/channel/0029VbDCZm63LdQaM7rBfz1Y" class="sec">📢 JOIN CHANNEL DAMZSTORE.MY</a>
+    <a href="https://whatsapp.com/channel/0029VbDCZm63LdQaM7rBfz1Y" class="secondary">📢 JOIN CHANNEL DAMZSTORE.MY</a>
+    <a href="https://chat.whatsapp.com/XXXXXXXX" class="secondary" style="background: #fff; color:#000;">👥 GROUP CUSTOMER (Tap to Join)</a>
   </div>
 
-  <div class="edit-hint">
-    💡 CARA TUKAR GAMBAR & NAMA:<br>
-    Edit bahagian bawah code (const admins) je. Tukar link gambar atau upload gambar baru dalam repo dan letak nama file.
+  <div class="footer">
+    © 2026 GameVault.MY & DamzStore.MY - All Rights Reserved<br>
+    Website Rasmi: damzofficialmy-design.github.io/gamevault-admin<br><br>
+    ⚠️ Hati-hati dengan scammer yang menyamar sebagai admin kami.<br>Rujuk website ini sahaja untuk nombor admin yang sah.
   </div>
 </div>
-
-<script>
-// ==========================================
-// EDIT KAT SINI SAHAJA UNTUK TUKAR DP / NAMA / LINK
-// ==========================================
-const admins = [
-  {
-    nama: "Damz Official",
-    jawatan: "Founder & Owner",
-    badge: "OWNER",
-    gambar: "https://i.pravatar.cc/150?img=68", // <-- TUKAR LINK GAMBAR DP KAT SINI
-    wa: "60123456789" // <-- TUKAR NO WHATSAPP TANPA +
-  },
-  {
-    nama: "Admin Aliff",
-    jawatan: "Admin Jualan Siang",
-    badge: "ONLINE",
-    gambar: "https://i.pravatar.cc/150?img=12",
-    wa: "60123456789"
-  },
-  {
-    nama: "Admin Along",
-    jawatan: "Admin Jualan Malam",
-    badge: "ONLINE",
-    gambar: "https://i.pravatar.cc/150?img=33",
-    wa: "60123456789"
-  },
-  {
-    nama: "Admin Mira",
-    jawatan: "Admin Support & Refund",
-    badge: "ONLINE",
-    gambar: "https://i.pravatar.cc/150?img=5",
-    wa: "60123456789"
-  },
-  {
-    nama: "Admin Eka",
-    jawatan: "Admin Part Time",
-    badge: "OFFLINE",
-    gambar: "https://i.pravatar.cc/150?img=15",
-    wa: "60123456789"
-  },
-  {
-    nama: "Admin Baru",
-    jawatan: "Slot Kosong - Hiring",
-    badge: "HIRING",
-    gambar: "https://i.pravatar.cc/150?img=32",
-    wa: "60123456789"
-  }
-];
-// ==========================================
-// JANGAN EDIT BAWAH NI
-// ==========================================
-const list = document.getElementById('adminList');
-admins.forEach(a => {
-  const isOwner = a.badge === 'OWNER';
-  list.innerHTML += `
-    <div class="card" ${isOwner ? 'style="border-color:#25D366"' : ''}>
-      <div class="left">
-        <img class="dp" src="${a.gambar}" onerror="this.src='https://via.placeholder.com/100'">
-        <div>
-          <div class="name">${a.nama} <span class="badge">${a.badge}</span></div>
-          <div class="role">${a.jawatan}</div>
-        </div>
-      </div>
-      <a class="btn ${isOwner ? 'btn-owner' : ''}" href="https://wa.me/${a.wa}">CHAT</a>
-    </div>
-  `;
-});
-</script>
 </body>
 </html>
