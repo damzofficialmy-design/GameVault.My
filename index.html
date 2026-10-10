@@ -14,12 +14,12 @@
   .card { background: linear-gradient(145deg, #1e1e1e, #161616); border-radius: 16px; padding: 16px; margin: 14px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid #2a2a2a; }
   .card:hover { border-color: #25D366; }
   .left { display: flex; align-items: center; }
-  .avatar { width: 52px; height: 52px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; margin-right: 12px; overflow: hidden; border: 2px solid #2a2a2a; flex-shrink: 0;}
+  .avatar { width: 52px; height: 52px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; margin-right: 12px; overflow: hidden; border: 2px solid #2a2a2a; flex-shrink: 0; }
   .avatar img { width: 100%; height: 100%; object-fit: cover; }
   .name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 6px; }
   .role { font-size: 11px; color: #888; margin-top: 2px; }
   .status { font-size: 10px; padding: 3px 7px; border-radius: 10px; font-weight: bold; }
-  .online { background: #25D366; color: #000; }
+  .online { background: #25D366; color: #000; } .OWNER { background: #25D366; color: #000; }
   .offline { background: #333; color: #999; }
   .btn { background: #fff; color: #000; padding: 9px 18px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 11px; }
   .btn-owner { background: #25D366; }
@@ -38,7 +38,60 @@
     <span class="badge">✅ VERIFIED OFFICIAL WEBSITE</span>
   </div>
 
-  <div id="admin-list"></div>
+  <div class="card" style="border-color: #25D366;">
+    <div class="left">
+      <div class="avatar"><img src="images/damz.jpg" onerror="this.parentElement.innerHTML='D'"></div>
+      <div>
+        <div class="name">Damz Official <span class="status OWNER">OWNER</span></div>
+        <div class="role">Founder & Owner - HQ</div>
+      </div>
+    </div>
+    <a class="btn btn-owner" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <div class="card">
+    <div class="left">
+      <div class="avatar"><img src="images/aliff.jpg" onerror="this.parentElement.innerHTML='A1'"></div>
+      <div>
+        <div class="name">Admin Aliff <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Jualan & Support</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <div class="card">
+    <div class="left">
+      <div class="avatar"><img src="images/along.jpg" onerror="this.parentElement.innerHTML='A2'"></div>
+      <div>
+        <div class="name">Admin Along <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Jualan Malam</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <div class="card">
+    <div class="left">
+      <div class="avatar"><img src="images/mira.jpg" onerror="this.parentElement.innerHTML='A3'"></div>
+      <div>
+        <div class="name">Admin Mira <span class="status online">ONLINE</span></div>
+        <div class="role">Admin Service & Refund</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
+
+  <div class="card">
+    <div class="left">
+      <div class="avatar"><img src="images/eka.jpg" onerror="this.parentElement.innerHTML='A4'"></div>
+      <div>
+        <div class="name">Admin Eka <span class="status offline">OFFLINE</span></div>
+        <div class="role">Admin Part-Time</div>
+      </div>
+    </div>
+    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
+  </div>
 
   <div class="group">
     <h3>🔰 CHANNEL & GROUP RASMI</h3>
@@ -49,110 +102,9 @@
 
   <div class="footer">
     © 2026 GameVault.MY & DamzStore.MY - All Rights Reserved<br>
-    Website: damzofficialmy-design.github.io/gamevault-admin<br><br>
+    Website Rasmi: damzofficialmy-design.github.io/gamevault-admin<br><br>
     ⚠️ Hati-hati dengan scammer yang menyamar sebagai admin kami.<br>Rujuk website ini sahaja untuk nombor admin yang sah.
   </div>
 </div>
-
-<script>
-// ============================
-// TUKAR SINI JE - SEMUA ORANG AKAN NAMPAK
-// ============================
-const ADMINS = [
-  {
-    id: "D",
-    name: "Damz Official",
-    role: "Founder & Owner - HQ",
-    status: "OWNER",
-    statusType: "online",
-    link: "https://wa.me/60123456789",
-    btnClass: "btn-owner",
-    // LETAK LINK GAMBAR KAT SINI. Contoh: https://i.imgur.com/xxxxx.jpg ATAU link github raw
-    img: "https://i.imgur.com/8Km9tLL.png" 
-  },
-  {
-    id: "A1",
-    name: "Admin Aliff",
-    role: "Admin Jualan & Support",
-    status: "ONLINE",
-    statusType: "online",
-    link: "https://wa.me/60123456789",
-    btnClass: "",
-    img: "" // kosongkan kalau nak guna huruf je
-  },
-  {
-    id: "A2",
-    name: "Admin Along",
-    role: "Admin Jualan Malam",
-    status: "ONLINE",
-    statusType: "online",
-    link: "https://wa.me/60123456789",
-    btnClass: "",
-    img: ""
-  },
-  {
-    id: "A3",
-    name: "Admin Mira",
-    role: "Admin Service & Refund",
-    status: "ONLINE",
-    statusType: "online",
-    link: "https://wa.me/60123456789",
-    btnClass: "",
-    img: ""
-  },
-  {
-    id: "A4",
-    name: "Admin Eka",
-    role: "Admin Part-Time",
-    status: "OFFLINE",
-    statusType: "offline",
-    link: "https://wa.me/60123456789",
-    btnClass: "",
-    img: ""
-  }
-];
-
-const container = document.getElementById('admin-list');
-container.innerHTML = ADMINS.map(admin => `
-  <div class="card" style="${admin.status === 'OWNER' ? 'border-color: #25D366;' : ''}">
-    <div class="left">
-      <div class="avatar">
-        ${admin.img ? `<img src="${admin.img}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="${admin.name}"><span style="display:none">${admin.id}</span>` : `<span>${admin.id}</span>`}
-        ${!admin.img ? '' : `<img src="${admin.img}" style="display:none">`}
-        ${admin.img ? '' : ''}
-        ${admin.img ? `<img src="${admin.img}">` : `${admin.id}`}
-      </div>
-      <div>
-        <div class="name">${admin.name} <span class="status ${admin.statusType}">${admin.status}</span></div>
-        <div class="role">${admin.role}</div>
-      </div>
-    </div>
-    <a class="btn ${admin.btnClass}" href="${admin.link}">CHAT</a>
-  </div>
-`.replace(/<div class="avatar">[\s\S]*?<\/div>/, (m) => {
-    // fix simple
-    return m;
-})).join('');
-
-// render betul2 simple tanpa bug
-container.innerHTML = '';
-ADMINS.forEach(admin => {
-  const card = document.createElement('div');
-  card.className = 'card';
-  if(admin.status === 'OWNER') card.style.borderColor = '#25D366';
-  const avatarContent = admin.img ? `<img src="${admin.img}" onerror="this.parentElement.innerHTML='${admin.id}'">` : admin.id;
-  card.innerHTML = `
-    <div class="left">
-      <div class="avatar">${avatarContent}</div>
-      <div>
-        <div class="name">${admin.name} <span class="status ${admin.statusType}">${admin.status}</span></div>
-        <div class="role">${admin.role}</div>
-      </div>
-    </div>
-    <a class="btn ${admin.btnClass}" href="${admin.link}" target="_blank">CHAT</a>
-  `;
-  container.appendChild(card);
-});
-</script>
 </body>
 </html>
