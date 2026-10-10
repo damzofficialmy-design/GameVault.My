@@ -6,34 +6,28 @@
 <title>GameVault.MY - Official Admin List 🇲🇾</title>
 <style>
   body { font-family: 'Segoe UI', sans-serif; background: #0a0a0a; color: white; margin: 0; padding: 20px; }
- .container { max-width: 500px; margin: auto; }
- .header { text-align: center; padding: 25px 0 15px 0; }
- .header h1 { margin: 0; font-size: 28px; }
- .header p { color: #25D366; font-weight: bold; font-size: 13px; letter-spacing: 1px; }
- .badge { background: #1a1a1a; border: 1px solid #333; padding: 6px 12px; border-radius: 20px; font-size: 11px; color: #aaa; display: inline-block; margin-top: 10px;}
-
- .card { background: linear-gradient(145deg, #1e1e1e, #161616); border-radius: 16px; padding: 16px; margin: 14px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid #2a2a2a; transition: 0.2s; position: relative;}
- .card:hover { border-color: #25D366; transform: scale(1.01); }
- .left { display: flex; align-items: center; }
- .avatar { width: 48px; height: 48px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; margin-right: 12px; overflow: hidden; cursor: pointer; position: relative; flex-shrink: 0; border: 2px solid #2a2a2a;}
- .avatar img { width: 100%; height: 100%; object-fit: cover; display: none; }
- .avatar.has-img img { display: block; }
- .avatar.has-img span { display: none; }
- .avatar:hover::after { content: '📸 TUKAR'; position: absolute; inset: 0; background: rgba(0,0,0,0.7); color: #fff; font-size: 8px; font-weight: 800; display: flex; align-items: center; justify-content: center; }
- .name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 6px; }
- .role { font-size: 11px; color: #888; margin-top: 2px; }
- .status { font-size: 10px; padding: 2px 6px; border-radius: 10px; font-weight: bold; }
- .online { background: #25D366; color: #000; }
- .offline { background: #333; color: #999; }
- .btn { background: #fff; color: #000; padding: 9px 18px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 11px; }
- .btn-owner { background: #25D366; }
-
- .group { margin-top: 30px; }
- .group h3 { text-align: center; font-size: 14px; color: #aaa; }
- .group a { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: #000; margin: 10px 0; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 14px; }
- .group a.secondary { background: #1e1e1e; color: #fff; border: 1px solid #333; }
- .footer { text-align: center; color: #555; font-size: 11px; margin-top: 40px; line-height: 1.6; }
- .edit-hint { text-align: center; color: #666; font-size: 10px; margin-top: 15px; }
+  .container { max-width: 500px; margin: auto; }
+  .header { text-align: center; padding: 25px 0 15px 0; }
+  .header h1 { margin: 0; font-size: 28px; }
+  .header p { color: #25D366; font-weight: bold; font-size: 13px; letter-spacing: 1px; }
+  .badge { background: #1a1a1a; border: 1px solid #333; padding: 6px 12px; border-radius: 20px; font-size: 11px; color: #aaa; display: inline-block; margin-top: 10px;}
+  .card { background: linear-gradient(145deg, #1e1e1e, #161616); border-radius: 16px; padding: 16px; margin: 14px 0; display: flex; align-items: center; justify-content: space-between; border: 1px solid #2a2a2a; }
+  .card:hover { border-color: #25D366; }
+  .left { display: flex; align-items: center; }
+  .avatar { width: 52px; height: 52px; background: #25D366; color: #000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 18px; margin-right: 12px; overflow: hidden; border: 2px solid #2a2a2a; flex-shrink: 0;}
+  .avatar img { width: 100%; height: 100%; object-fit: cover; }
+  .name { font-weight: 700; font-size: 15px; display: flex; align-items: center; gap: 6px; }
+  .role { font-size: 11px; color: #888; margin-top: 2px; }
+  .status { font-size: 10px; padding: 3px 7px; border-radius: 10px; font-weight: bold; }
+  .online { background: #25D366; color: #000; }
+  .offline { background: #333; color: #999; }
+  .btn { background: #fff; color: #000; padding: 9px 18px; border-radius: 50px; text-decoration: none; font-weight: 800; font-size: 11px; }
+  .btn-owner { background: #25D366; }
+  .group { margin-top: 30px; }
+  .group h3 { text-align: center; font-size: 14px; color: #aaa; }
+  .group a { display: flex; align-items: center; justify-content: center; gap: 8px; background: #25D366; color: #000; margin: 10px 0; padding: 14px; border-radius: 12px; text-decoration: none; font-weight: 800; font-size: 14px; }
+  .group a.secondary { background: #1e1e1e; color: #fff; border: 1px solid #333; }
+  .footer { text-align: center; color: #555; font-size: 11px; margin-top: 40px; line-height: 1.6; }
 </style>
 </head>
 <body>
@@ -44,77 +38,7 @@
     <span class="badge">✅ VERIFIED OFFICIAL WEBSITE</span>
   </div>
 
-  <!-- ===== ADMIN SLOT 1 - OWNER ===== -->
-  <div class="card" style="border-color: #25D366;">
-    <div class="left">
-      <div class="avatar" data-id="owner" onclick="pickImage('owner')"><span>D</span><img id="img-owner"></div>
-      <div>
-        <div class="name">Damz Official <span class="status online">OWNER</span></div>
-        <div class="role">Founder & Owner - HQ</div>
-      </div>
-    </div>
-    <a class="btn btn-owner" href="https://wa.me/60123456789">CHAT</a>
-  </div>
-
-  <!-- ===== ADMIN SLOT 2 ===== -->
-  <div class="card">
-    <div class="left">
-      <div class="avatar" data-id="a1" onclick="pickImage('a1')"><span>A1</span><img id="img-a1"></div>
-      <div>
-        <div class="name">Admin Aliff <span class="status online">ONLINE</span></div>
-        <div class="role">Admin Jualan & Support</div>
-      </div>
-    </div>
-    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
-  </div>
-
-  <!-- ===== ADMIN SLOT 3 ===== -->
-  <div class="card">
-    <div class="left">
-      <div class="avatar" data-id="a2" onclick="pickImage('a2')"><span>A2</span><img id="img-a2"></div>
-      <div>
-        <div class="name">Admin Along <span class="status online">ONLINE</span></div>
-        <div class="role">Admin Jualan Malam</div>
-      </div>
-    </div>
-    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
-  </div>
-
-  <!-- ===== ADMIN SLOT 4 ===== -->
-  <div class="card">
-    <div class="left">
-      <div class="avatar" data-id="a3" onclick="pickImage('a3')"><span>A3</span><img id="img-a3"></div>
-      <div>
-        <div class="name">Admin Mira <span class="status online">ONLINE</span></div>
-        <div class="role">Admin Service & Refund</div>
-      </div>
-    </div>
-    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
-  </div>
-
-  <!-- ===== ADMIN SLOT 5 ===== -->
-  <div class="card">
-    <div class="left">
-      <div class="avatar" data-id="a4" onclick="pickImage('a4')"><span>A4</span><img id="img-a4"></div>
-      <div>
-        <div class="name">Admin Eka <span class="status offline">OFFLINE</span></div>
-        <div class="role">Admin Part-Time</div>
-      </div>
-    </div>
-    <a class="btn" href="https://wa.me/60123456789">CHAT</a>
-  </div>
-
-  <!-- ===== ADMIN SLOT 6 ===== -->
-  <div class="card">
-    <div class="left">
-      <div class="avatar" data-id="a5" onclick="pickImage('a5')"><span>A5</span><img id="img-a5"></div>
-      <div>
-        <div class="name">Admin Kosong <span class="status offline">HIRING</span></div>
-        <div class="role">Slot Kosong - PM Owner</div>
-      </div>
-    </div>
-    <a class="btn" href="https://wa.me/60123456789">APPLY</a>
-  </div>
+  <div id="admin-list"></div>
 
   <div class="group">
     <h3>🔰 CHANNEL & GROUP RASMI</h3>
@@ -123,58 +47,112 @@
     <a href="https://chat.whatsapp.com/XXXXXXXX" class="secondary" style="background: #fff; color:#000;">👥 GROUP CUSTOMER (Tap to Join)</a>
   </div>
 
-  <p class="edit-hint">💡 Cara tukar DP: Klik je bulat gambar admin tu → Pilih gambar dari gallery → Auto Save</p>
-
   <div class="footer">
     © 2026 GameVault.MY & DamzStore.MY - All Rights Reserved<br>
-    Website Rasmi: damzofficialmy-design.github.io/gamevault-admin<br><br>
+    Website: damzofficialmy-design.github.io/gamevault-admin<br><br>
     ⚠️ Hati-hati dengan scammer yang menyamar sebagai admin kami.<br>Rujuk website ini sahaja untuk nombor admin yang sah.
   </div>
 </div>
 
-<!-- Hidden File Input -->
-<input type="file" id="fileInput" accept="image/*" style="display:none">
-
 <script>
-  let currentId = null;
-  const fileInput = document.getElementById('fileInput');
-
-  // Load gambar dari localStorage bila buka website
-  window.onload = () => {
-    ['owner','a1','a2','a3','a4','a5'].forEach(id => {
-      const saved = localStorage.getItem('dp_' + id);
-      if (saved) {
-        const img = document.getElementById('img-' + id);
-        const avatar = img.parentElement;
-        img.src = saved;
-        avatar.classList.add('has-img');
-      }
-    });
-  };
-
-  function pickImage(id) {
-    currentId = id;
-    fileInput.click();
+// ============================
+// TUKAR SINI JE - SEMUA ORANG AKAN NAMPAK
+// ============================
+const ADMINS = [
+  {
+    id: "D",
+    name: "Damz Official",
+    role: "Founder & Owner - HQ",
+    status: "OWNER",
+    statusType: "online",
+    link: "https://wa.me/60123456789",
+    btnClass: "btn-owner",
+    // LETAK LINK GAMBAR KAT SINI. Contoh: https://i.imgur.com/xxxxx.jpg ATAU link github raw
+    img: "https://i.imgur.com/8Km9tLL.png" 
+  },
+  {
+    id: "A1",
+    name: "Admin Aliff",
+    role: "Admin Jualan & Support",
+    status: "ONLINE",
+    statusType: "online",
+    link: "https://wa.me/60123456789",
+    btnClass: "",
+    img: "" // kosongkan kalau nak guna huruf je
+  },
+  {
+    id: "A2",
+    name: "Admin Along",
+    role: "Admin Jualan Malam",
+    status: "ONLINE",
+    statusType: "online",
+    link: "https://wa.me/60123456789",
+    btnClass: "",
+    img: ""
+  },
+  {
+    id: "A3",
+    name: "Admin Mira",
+    role: "Admin Service & Refund",
+    status: "ONLINE",
+    statusType: "online",
+    link: "https://wa.me/60123456789",
+    btnClass: "",
+    img: ""
+  },
+  {
+    id: "A4",
+    name: "Admin Eka",
+    role: "Admin Part-Time",
+    status: "OFFLINE",
+    statusType: "offline",
+    link: "https://wa.me/60123456789",
+    btnClass: "",
+    img: ""
   }
+];
 
-  fileInput.onchange = (e) => {
-    const file = e.target.files[0];
-    if (!file) return;
+const container = document.getElementById('admin-list');
+container.innerHTML = ADMINS.map(admin => `
+  <div class="card" style="${admin.status === 'OWNER' ? 'border-color: #25D366;' : ''}">
+    <div class="left">
+      <div class="avatar">
+        ${admin.img ? `<img src="${admin.img}" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'" alt="${admin.name}"><span style="display:none">${admin.id}</span>` : `<span>${admin.id}</span>`}
+        ${!admin.img ? '' : `<img src="${admin.img}" style="display:none">`}
+        ${admin.img ? '' : ''}
+        ${admin.img ? `<img src="${admin.img}">` : `${admin.id}`}
+      </div>
+      <div>
+        <div class="name">${admin.name} <span class="status ${admin.statusType}">${admin.status}</span></div>
+        <div class="role">${admin.role}</div>
+      </div>
+    </div>
+    <a class="btn ${admin.btnClass}" href="${admin.link}">CHAT</a>
+  </div>
+`.replace(/<div class="avatar">[\s\S]*?<\/div>/, (m) => {
+    // fix simple
+    return m;
+})).join('');
 
-    const reader = new FileReader();
-    reader.onload = function(event) {
-      const base64 = event.target.result;
-      const img = document.getElementById('img-' + currentId);
-      const avatar = img.parentElement;
-      img.src = base64;
-      avatar.classList.add('has-img');
-      // Save ke browser
-      localStorage.setItem('dp_' + currentId, base64);
-    };
-    reader.readAsDataURL(file);
-    // reset supaya boleh upload gambar sama lagi
-    e.target.value = '';
-  };
+// render betul2 simple tanpa bug
+container.innerHTML = '';
+ADMINS.forEach(admin => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  if(admin.status === 'OWNER') card.style.borderColor = '#25D366';
+  const avatarContent = admin.img ? `<img src="${admin.img}" onerror="this.parentElement.innerHTML='${admin.id}'">` : admin.id;
+  card.innerHTML = `
+    <div class="left">
+      <div class="avatar">${avatarContent}</div>
+      <div>
+        <div class="name">${admin.name} <span class="status ${admin.statusType}">${admin.status}</span></div>
+        <div class="role">${admin.role}</div>
+      </div>
+    </div>
+    <a class="btn ${admin.btnClass}" href="${admin.link}" target="_blank">CHAT</a>
+  `;
+  container.appendChild(card);
+});
 </script>
 </body>
 </html>
